@@ -1,0 +1,211 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
+@import url(//fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+
+/*
+    Center the contents of the page.
+*/
+
+body {
+    margin: 0 auto;
+    margin-left: auto;
+    width: 50%;
+    margin-right: auto;
+    background-color: #87CEEB;
+   
+}
+
+/*
+    Set common typography.
+    
+    The preferred font is Open Sans, which is a Google Web Font, so it should be available everywhere. If it isn't, Verdana is the backup font, but only for body text, because it doesn't look good in headers.
+*/
+
+body {
+ 
+  font-size: 15pt;
+  font-style: oblique;
+  margin-top: 30px;
+  
+
+}
+ul{
+  list-style: none;
+}
+ul li {
+  display: inline-block;
+  position: relative;
+  left: 5px;
+  bottom: 46px;
+}
+ul:hover{
+  background-color:   ;
+
+}
+
+h1 {
+  
+  font-weight: inherit;
+  font-size: 20pt;
+  color: green;
+  font-style: oblique;
+}
+
+
+h2 {
+  
+  font-weight: normal;
+  font-size: 25px;
+  color: white;
+  margin-bottom: 0;
+  font-style: oblique;
+
+}
+
+/*
+    Position the month names, day numbers, and person names.
+    
+    The day numbers are on the left with a list of person names to the right of them.
+*/
+
+h1 {
+    margin: 0;
+    border-bottom: 1px dotted grey;
+}
+
+h2 {
+    margin: 0;
+    margin-top: 10px;
+
+}
+
+h2 ~ p {    /* only applies to p-elements on the main page */
+    margin: 0;
+    position: relative;
+    top: -40px;     /* move person names to line up with the day number */
+    left: 80px;     /* make sure the person names don't overlap the day number */
+
+}
+
+p:last-of-type {    /* the last p-element should act like a normal paragraph since it's not a person name */
+    position: static;
+}
+
+/*
+    Set hyperlink styles.
+*/
+
+a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.del {     /* delete links */
+    padding: 5px 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    float: right;
+    background-color: #d9dfe1;   
+    opacity:0.4;
+    color: green;
+    bottom: 90px;
+    position: relative;
+
+   
+    
+}
+
+
+.add{
+    padding: 5px 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 15%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: green;
+    opacity:0.4;
+    background-color: #d9dfe1;    
+    position: relative;
+    left: 40%;
+    
+
+
+
+
+
+}
+/*
+    Set the style of forms.
+    
+    Labels are in a column to the left, with input fields to the right and spanning the entire remaining width.
+*/
+
+form p {
+    margin: 5px 0;
+
+} 
+
+form label {
+    display: block;
+    width: 100px;
+    margin-top: 4px;
+}
+
+form input[type=submit]:only-child {
+    margin-left: 100px; 
+    
+        /* place submit button underneath fields */
+}
+.lab{
+  font-size: 15pt;
+}
+
+.button{
+  
+    padding: 5px 15px;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: green;
+    
+}
+.yes, .no{
+
+    padding: 5px 15px;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: green;
+}
+
+footer{
+  text-align: center;
+  color: black 
+  margin-bottom: 5px; 
+}
+
+.linkpage{
+  color: black;
+ 
+}
+.linkpage:hover{
+  text-decoration: none;
+}
+
+.pagebutton{
+  border: 2px solid green;
+  padding: 5px 10px;
+  border-radius: 10px;
+
+}
+.titel{
+  color: black;
+  margin-bottom: 15px;
+  font-style: oblique;
+  text-align: center;
+}
+
